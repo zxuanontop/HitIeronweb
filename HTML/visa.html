@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Apply for Visa</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="../CSS/cvisa.css">
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
+    <div class="container-fluid px-4">
+      <a class="navbar-brand fw-bold" href="#" id="player">
+        <img id="rotimg" src="../assets/sign.png" height="30px" width="30px" style="animation: rotateAnim 0.9s linear infinite;">
+      </a>
+      <a class="navbar-brand fw-bold" href="home.html">Nazism</a>
+      <audio id="bgAudio" src="../assets/audio.mp3" autoplay loop></audio>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="../HTML/login.html">Login</a></li>
+          <li class="nav-item"><a class="nav-link" href="../HTML/signup.html">Signup</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="visa-header" data-aos="fade-down">
+    <h1>Apply for Visa</h1>
+    <p>Join the Movement - Secure Your Place in the New Order</p>
+  </div>
+
+  <div class="container">
+    <div class="visa-container" data-aos="zoom-in">
+      
+      <div class="success-message" id="successMessage">
+        <h3>✓ Application Submitted Successfully!</h3>
+        <p>Your visa application has been received. We will contact you within 5-7 business days.</p>
+      </div>
+
+      <div class="info-box" data-aos="fade-up">
+        <strong>Important Notice:</strong> All applicants must be of pure Aryan descent and willing to serve the Reich. Processing time: 2-4 weeks.
+      </div>
+
+      <div class="section-title" data-aos="fade-up">Requirements</div>
+      <div class="requirements-list" data-aos="fade-up" data-aos-delay="100">
+        <ul>
+          <li>Must be between 18-30 years old</li>
+          <li>White with perfect genes</li>
+          <li>Clean criminal record</li>
+          <li>C1 in Germany language</li>
+          <li>Proof of Aryan ancestry (genealogy documents)</li>
+          <li>Physical fitness certificate</li>
+          <li>Letter of recommendation from a party member</li>
+          <li>Ready to use weapons and  to fight under the name of germany in any condition  </li>
+          <li>Passport-sized photograph</li>
+        </ul>
+      </div>
+
+      <form id="visaForm">
+        <div class="section-title" data-aos="fade-up">Personal Information</div>
+
+        <div class="row">
+          <div class="col-md-6 mb-3" data-aos="fade-right">
+            <label class="form-label">First Name</label>
+            <input type="text" class="form-control" id="firstName" placeholder="Enter first name" required>
+          </div>
+          <div class="col-md-6 mb-3" data-aos="fade-left">
+            <label class="form-label">Last Name</label>
+            <input type="text" class="form-control" id="lastName" placeholder="Enter last name" required>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6 mb-3" data-aos="fade-right">
+            <label class="form-label">Date of Birth</label>
+            <input type="date" class="form-control" id="dob" required>
+          </div>
+          <div class="col-md-6 mb-3" data-aos="fade-left">
+            <label class="form-label">Gender</label>
+            <select class="form-select" id="gender" required>
+              <option value="">Select gender</option>
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="mb-3" data-aos="fade-up">
+          <label class="form-label">Nationality</label>
+          <input type="text" class="form-control" id="nationality" placeholder="Enter nationality" required>
+        </div>
+
+        <div class="mb-3" data-aos="fade-up">
+          <label class="form-label">Current Address</label>
+          <textarea class="form-control" id="address" rows="3" placeholder="Enter your full address" required></textarea>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6 mb-3" data-aos="fade-right">
+            <label class="form-label">Email Address</label>
+            <input type="email" class="form-control" id="email" placeholder="your.email@example.com" required>
+          </div>
+          <div class="col-md-6 mb-3" data-aos="fade-left">
+            <label class="form-label">Phone Number</label>
+            <input type="tel" class="form-control" id="phone" placeholder="+XX XXX XXX XXXX" required>
+          </div>
+        </div>
+
+        <div class="section-title mt-4" data-aos="fade-up">Application Details</div>
+
+        <div class="mb-3" data-aos="fade-up">
+          <label class="form-label">Visa Type</label>
+          <select class="form-select" id="visaType" required>
+            <option value="">Select visa type</option>
+            <option value="work">Work Visa</option>
+            <option value="study">Study Visa</option>
+            <option value="military">Military Service</option>
+            <option value="permanent">Permanent Residence</option>
+          </select>
+        </div>
+
+        <div class="mb-3" data-aos="fade-up">
+          <label class="form-label">Occupation</label>
+          <input type="text" class="form-control" id="occupation" placeholder="Your current occupation" required>
+        </div>
+
+        <div class="mb-3" data-aos="fade-up">
+          <label class="form-label">Education Level</label>
+          <select class="form-select" id="education" required>
+            <option value="">Select education level</option>
+            <option value="high-school">High School</option>
+            <option value="vocational">Vocational Training</option>
+            <option value="bachelor">Bachelor's Degree</option>
+            <option value="master">Master's Degree</option>
+            <option value="doctorate">Doctorate</option>
+          </select>
+        </div>
+
+        <div class="mb-3" data-aos="fade-up">
+          <label class="form-label">Skills & Qualifications</label>
+          <textarea class="form-control" id="skills" rows="4" placeholder="Describe your skills and how you can contribute to the Reich" required></textarea>
+        </div>
+
+        <div class="section-title mt-4" data-aos="fade-up">Document Upload</div>
+
+        <div class="file-upload-box" data-aos="fade-up" onclick="document.getElementById('photoUpload').click()">
+          <p>📷 Click to Upload Photo</p>
+          <p style="font-size:12px; color:rgba(255,255,255,0.7);">Passport-sized photo (JPG, PNG)</p>
+          <p class="file-name" id="photoName"></p>
+        </div>
+        <input type="file" id="photoUpload" accept="image/*" style="display:none;">
+
+        <div class="file-upload-box" data-aos="fade-up" data-aos-delay="100" onclick="document.getElementById('docUpload').click()">
+          <p>📄 Click to Upload Documents</p>
+          <p style="font-size:12px; color:rgba(255,255,255,0.7);">Genealogy documents, certificates (PDF)</p>
+          <p class="file-name" id="docName"></p>
+        </div>
+        <input type="file" id="docUpload" accept=".pdf" style="display:none;">
+
+        <div class="mb-4" data-aos="fade-up">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="agreeTerms" required>
+            <label class="form-check-label" style="color:#fff;">
+              I declare that all information provided is accurate and I pledge loyalty to the Reich
+            </label>
+          </div>
+        </div>
+
+        <button type="submit" class="btn-submit" data-aos="zoom-in">Submit Application</button>
+      </form>
+
+    </div>
+  </div>
+
+  <footer class="text-center text-lg-start bg-body-tertiary text-muted">
+    <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+      <div class="me-5 d-none d-lg-block"><span>Get connected with us on social networks:</span></div>
+      <div>
+        <a href="" class="me-4 text-reset"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/></svg></a>
+        <a href="" class="me-4 text-reset"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/></svg></a>
+        <a href="" class="me-4 text-reset"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M15.545 6.558a9.4 9.4 0 0 1 .139 1.626c0 2.434-.87 4.492-2.384 5.885h.002C11.978 15.292 10.158 16 8 16A8 8 0 1 1 8 0a7.7 7.7 0 0 1 5.352 2.082l-2.284 2.284A4.35 4.35 0 0 0 8 3.166c-2.087 0-3.86 1.408-4.492 3.304a4.8 4.8 0 0 0 0 3.063h.003c.635 1.893 2.405 3.301 4.492 3.301 1.078 0 2.004-.276 2.722-.764h-.003a3.7 3.7 0 0 0 1.599-2.431H8v-3.08z"/></svg></a>
+      </div>
+    </section>
+    <section class="">
+      <div class="container text-center text-md-start mt-5">
+        <div class="row mt-3">
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <h6 class="text-uppercase fw-bold mb-4"><i class="fas fa-gem me-3"></i>Nazi party</h6>
+            <p>The winner always write the history as he wants, don't let them close your eyes with sweet lies we r here to make sure that the hidden truth be obv for the world.</p>
+          </div>
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+            <h6 class="text-uppercase fw-bold mb-4">Our Allies</h6>
+            <p><a href="#!" class="text-reset">Roma</a></p>
+            <p><a href="#!" class="text-reset">Astria</a></p>
+            <p><a href="#!" class="text-reset">Japan</a></p>
+          </div>
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+            <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M7.207 1a1 1 0 0 0-1.414 0L.146 6.646a.5.5 0 0 0 .708.708L1 7.207V12.5A1.5 1.5 0 0 0 2.5 14h.55a2.5 2.5 0 0 1-.05-.5V9.415a1.5 1.5 0 0 1-.56-2.475l5.353-5.354z"/><path d="M8.793 2a1 1 0 0 1 1.414 0L12 3.793V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v3.293l1.854 1.853a.5.5 0 0 1-.708.708L15 8.207V13.5a1.5 1.5 0 0 1-1.5 1.5h-8A1.5 1.5 0 0 1 4 13.5V8.207l-.146.147a.5.5 0 1 1-.708-.708z"/></svg> Obersalzberg, Berchtesgaden, Germany</p>
+            <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M2 2A2 2 0 0 0 .05 3.555L8 8.414l7.95-4.859A2 2 0 0 0 14 2zm-2 9.8V4.698l5.803 3.546zm6.761-2.97-6.57 4.026A2 2 0 0 0 2 14h6.256A4.5 4.5 0 0 1 8 12.5a4.49 4.49 0 0 1 1.606-3.446l-.367-.225L8 9.586zM16 9.671V4.697l-5.803 3.546.338.208A4.5 4.5 0 0 1 12.5 8c1.414 0 2.675.652 3.5 1.671"/><path d="M15.834 12.244c0 1.168-.577 2.025-1.587 2.025-.503 0-1.002-.228-1.12-.648h-.043c-.118.416-.543.643-1.015.643-.77 0-1.259-.542-1.259-1.434v-.529c0-.844.481-1.4 1.26-1.4.585 0 .87.333.953.63h.03v-.568h.905v2.19c0 .272.18.42.411.42.315 0 .639-.415.639-1.39v-.118c0-1.277-.95-2.326-2.484-2.326h-.04c-1.582 0-2.64 1.067-2.64 2.724v.157c0 1.867 1.237 2.654 2.57 2.654h.045c.507 0 .935-.07 1.18-.18v.731c-.219.1-.643.175-1.237.175h-.044C10.438 16 9 14.82 9 12.646v-.214C9 10.36 10.421 9 12.485 9h.035c2.12 0 3.314 1.43 3.314 3.034zm-4.04.21v.227c0 .586.227.8.581.8.31 0 .564-.17.564-.743v-.367c0-.516-.275-.708-.572-.708-.346 0-.573.245-.573.791"/></svg> info@Nazism.com</p>
+            <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/></svg> + 49 178 254 713 0</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="text-center p-4" style="background-color:rgba(0,0,0,0.05);">© 2025 Copyright: <a class="text-reset fw-bold" href="../HTML/home.html">Nazism.com</a></div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="../JAVASCRIPT/svisa.js"></script>
+</body>
+</html>
